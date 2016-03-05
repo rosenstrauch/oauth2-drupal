@@ -16,9 +16,9 @@ class DrupalResourceOwner implements ResourceOwnerInterface
     /**
      * Creates new resource owner.
      *
-     * @param $response
+     * @param array $response
      */
-    public function __construct($response)
+    public function __construct(array $response)
     {
         $this->response = $response;
     }
