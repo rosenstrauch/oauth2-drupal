@@ -19,7 +19,7 @@ class Drupal extends AbstractProvider
     {
         return $this->baseUrl;
     }
-    
+
     /**
      * Get provider url to run authorization
      *
@@ -31,10 +31,9 @@ class Drupal extends AbstractProvider
     }
 
     /**
-     * Get provider url to fetch token
+     * Returns the base URL for requesting an access token.
      *
-     * @param AccessToken $token
-     *
+     * @param array $params
      * @return string
      */
     public function getBaseAccessTokenUrl(array $params)
@@ -46,7 +45,6 @@ class Drupal extends AbstractProvider
      * Get provider url to fetch user details
      *
      * @param AccessToken $token
-     *
      * @return string
      */
     public function getResourceOwnerDetailsUrl(AccessToken $token)
