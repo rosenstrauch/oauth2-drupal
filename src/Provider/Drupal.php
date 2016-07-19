@@ -49,7 +49,7 @@ class Drupal extends AbstractProvider
      */
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
-        return $this->getBaseUrl() . '/oauth2/userInfo';
+        return $this->getBaseUrl() . '/oauth2/UserInfo';
     }
 
     /**
