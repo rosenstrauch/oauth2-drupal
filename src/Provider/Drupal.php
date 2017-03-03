@@ -53,21 +53,6 @@ class Drupal extends AbstractProvider
     }
 
     /**
-     * @Override
-     * Requests resource owner details.
-     *
-     * @param  AccessToken $token
-     * @return mixed
-     */
-    protected function fetchResourceOwnerDetails(AccessToken $token)
-    {
-        $url = $this->getResourceOwnerDetailsUrl($token);
-        $request = $this->getAuthenticatedRequest(self::METHOD_POST, $url, $token);
-
-        return $this->getResponse($request);
-    }
-
-    /**
      * Get the default scopes used by this provider.
      *
      * @return array
