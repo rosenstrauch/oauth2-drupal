@@ -60,7 +60,7 @@ class DrupalTest extends \PHPUnit_Framework_TestCase
     {
         $url = $this->provider->getAuthorizationUrl();
         $uri = parse_url($url);
-        $this->assertEquals('/oauth2/authorize', $uri['path']);
+        $this->assertEquals('/oauth/authorize', $uri['path']);
     }
 
     public function testGetBaseAccessTokenUrl()
@@ -68,7 +68,7 @@ class DrupalTest extends \PHPUnit_Framework_TestCase
         $params = [];
         $url = $this->provider->getBaseAccessTokenUrl($params);
         $uri = parse_url($url);
-        $this->assertEquals('/oauth2/token', $uri['path']);
+        $this->assertEquals('/oauth/token', $uri['path']);
     }
 
     public function testGetAccessToken()
