@@ -59,7 +59,7 @@ class Drupal extends AbstractProvider
      */
     protected function getDefaultScopes()
     {
-        return ['openid', 'email', 'profile'];
+        return ['apiuser'];
     }
 
     /**
